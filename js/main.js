@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const forecastListView = new ForecastListView('#tableBody')
 
+    // const promises = STATE.cities.map(cityId => dataService.getWeatherForecast(cityId))
+    // Promise.allSettled(promises)
+    
     STATE.cities.forEach( async (cityId) => {
         const forecast = await dataService.getWeatherForecast(cityId)
         console.log(forecast)
