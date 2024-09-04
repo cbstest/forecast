@@ -1,15 +1,45 @@
-@font-face {
-    font-family: Roboto;
-    font-weight: 400;
-    font-style: normal;
-    src: local("Roboto"), local(Roboto), url(./fonts/Roboto-Regular.woff2) format("woff2");
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-@font-face {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: normal;
-    src: local("Roboto-Bold"), local(Roboto-Bold), url(./fonts/Roboto-Bold.woff2) format("woff2");
-}
+body {
+  background-color: #040506;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 
-body {}
+  .container {
+    width: 600px;
+  
+    h1 {
+      background-color: rgb(116, 106, 106);
+      text-align: center;
+      margin: 10px 0 0 0;
+    }
+  
+    .table {
+      width: 100%;
+      background-color: rgb(45, 45, 70);
+  
+      td {
+        padding: 30px;
+        text-align: center;
+  
+        &.cities {
+          font-size: 32px;
+          font-weight: 700;
+        }
+  
+        .temp {
+          font-size: 24px;
+          /* font-weight: 700; */
+        }
+  
+        .description {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
